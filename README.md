@@ -1,1 +1,6 @@
-# Quiz-Express-app
+# Quiz-Express-App
+
+Credits
+* Expressjs
+* Pug (Jade)
+* Mongodb
