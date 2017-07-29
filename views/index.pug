@@ -1,0 +1,13 @@
+extends layout
+
+block main
+	div.row
+		div.col-sm-12.container
+			div.col-sm-6
+				h1.welcome This is Quiz!
+				form.name-form(action='/', method='post')
+					div.centerd
+						div.form-group
+							p.name-prompt Please enter your name:
+								input.user-name(type='text', name='username' required)
+							button(type='submit') Submit

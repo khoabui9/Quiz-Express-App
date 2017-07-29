@@ -1,0 +1,23 @@
+extends layout
+
+block main
+	div.row
+		div.col-sm-12.continput
+			div.col-sm-6
+				h2= questionss.text
+				ul
+					form.answers-form(action='/questions', method='post')
+						for answer in questionss.answer
+							li
+								input(type='radio', name='answer', value=answer.text, required)
+								label= answer.text
+								div.bullet
+									div.line zero
+									div.line one
+									div.line two
+									div.line three
+									div.line four
+									div.line five
+									div.line six
+									div.line seven
+						button.answers-submit.btn.btn-primary(type='submit') Next

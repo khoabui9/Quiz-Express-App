@@ -1,0 +1,13 @@
+extends layout
+
+block main
+	div.row
+		div.container
+			div
+				h1.header Your Score
+				h2.score= score
+				div.centerd
+					a.startover(href='/') Start over
+				div.centerd
+					form.namecard-exit(action='/goodbye', method='POST')
+						button(type="submit") Goodbye
